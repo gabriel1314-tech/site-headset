@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto - Pineapple Store</title>
+  <style>
+    body {
+      background-color: #DC143C;
+      color: #FFFF00;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.1em;
+      background-color: #FFFF00;
+      color: #DC143C;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fff200;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Headset Exclusivo Pineapple</h1>
+  <p>Clique abaixo para adicionar ao carrinho:</p>
+  <button onclick="addToCart()">Adicionar ao Carrinho</button>
+
+  <script>
+    function addToCart() {
+      alert('Produto adicionado ao carrinho com sucesso!');
+    }
+  </script>
+</body>
+</html>
