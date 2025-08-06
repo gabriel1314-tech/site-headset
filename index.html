@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pineapple Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #DC143C;
+      color: #FFFF00;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #DC143C;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .product-image {
+      width: 250px;
+      height: 250px;
+      background: #FFFF00;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      background-image: url('fone.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .product-title {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 1.2em;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      padding: 12px 30px;
+      font-size: 1.1em;
+      background-color: #FFFF00;
+      color: #DC143C;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .buy-button:hover {
+      background-color: #fff200;
+      transform: scale(1.05);
+    }
+
+    #iframe-container {
+      display: none;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      margin: 20px auto;
+      border: 3px solid #FFFF00;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background-color: #DC143C;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🍍 Pineapple Store
+  </header>
+
+  <main>
+    <div class="product-image"></div>
+    <h1 class="product-title">Headset Exclusivo Pineapple</h1>
+    <p class="product-description">
+      headset exclusivo que traduz outras linguas automaticamente por apenas R$2000!
+    </p>
+    <button class="buy-button" onclick="mostrarIframe()">Comprar Agora</button>
+
+    <div id="iframe-container">
+      <iframe src="produto.html"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pineapple Store. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function mostrarIframe() {
+      document.getElementById("iframe-container").style.display = "block";
+    }
+  </script>
+</body>
+</html>
